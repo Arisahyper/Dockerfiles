@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  app:
+    image: golang
+    volumes:
+      - ./:/go/src/app
+      - ./go-data:/go/src/app/config
+    working_dir: /go/src/app
+volumes:
+  go-data:
