@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  rust:
+    container_name: rust
+    image: rust:slim-bullseye
+    volumes:
+      - ./:/app
+    working_dir: /app
+    tty: true
